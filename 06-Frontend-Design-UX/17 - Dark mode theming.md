@@ -1,71 +1,73 @@
 ---
-titre: "Concevoir thèmes et dark mode"
+title: "Design themes and dark mode"
 format: prompt
 archetype: instruction
-domaine: frontend-design-ux
+domain: frontend-design-ux
 tags:
   - frontend
   - design
   - ux
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "recommandation frontend/design directement exploitable"
-niveau_risque: faible
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "directly actionable frontend/design recommendation"
+risk_level: low
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Concevoir thèmes et dark mode
+# Design themes and dark mode
 
-## Quand l'utiliser
+## When to use it
 
-Quand le produit nécessite plusieurs thèmes.
+When the product requires multiple themes.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Conçois un système de thèmes robuste.
+Design a robust theming system.
 
-Définis des tokens sémantiques plutôt que des couleurs codées par composant.
+Define semantic tokens rather than component-coded colors.
 
-Couvre :
-- background/surface ;
-- texte ;
-- borders ;
-- brand ;
-- interactive ;
-- success/warning/error ;
-- focus ;
-- overlays ;
-- graphiques ;
-- syntaxe si applicable.
+Cover:
+- background/surface;
+- text;
+- borders;
+- brand;
+- interactive;
+- success/warning/error;
+- focus;
+- overlays;
+- charts;
+- syntax when applicable.
 
-Vérifie :
-- contrastes ;
-- images/logos ;
-- ombres ;
-- élévation ;
-- préférence système ;
-- changement de thème ;
-- flash au chargement.
+Verify:
+- contrast;
+- images/logos;
+- shadows;
+- elevation;
+- system preference;
+- theme switching;
+- flash on load.
 
-Ne fais pas un simple inversement de couleurs.
+Do not merely invert colors.
 
-Sortie : recommandation frontend/design directement exploitable.
+Output: a directly actionable frontend/design recommendation.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une recommandation frontend/design directement exploitable.
+A directly actionable frontend/design recommendation.

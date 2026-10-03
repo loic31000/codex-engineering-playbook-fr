@@ -1,74 +1,76 @@
 ---
-titre: "Visual QA frontend"
+title: "Frontend visual QA"
 format: prompt
 archetype: checklist
-domaine: frontend-design-ux
+domain: frontend-design-ux
 tags:
   - frontend
   - design
   - ux
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "recommandation frontend/design directement exploitable"
-niveau_risque: faible
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "directly actionable frontend/design recommendation"
+risk_level: low
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Visual QA frontend
+# Frontend visual QA
 
-## Quand l'utiliser
+## When to use it
 
-Après implémentation d'un écran ou avant PR.
+After implementing a screen or before a PR.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Agis comme un designer produit + frontend reviewer.
+Act as a product designer and frontend reviewer.
 
-Compare l'implémentation aux exigences visuelles et UX disponibles.
+Compare the implementation with the available visual and UX requirements.
 
-Vérifie :
-- hiérarchie ;
-- alignements ;
-- spacing ;
-- typographie ;
-- couleurs ;
-- radius/borders/shadows ;
-- iconographie ;
-- dimensions ;
-- responsive ;
-- overflow ;
-- états ;
-- focus ;
-- hover ;
-- disabled ;
-- erreurs ;
-- empty/loading ;
-- cohérence avec le design system.
+Verify:
+- hierarchy;
+- alignments;
+- spacing;
+- typography;
+- colors;
+- radius/borders/shadows;
+- iconography;
+- dimensions;
+- responsive behavior;
+- overflow;
+- states;
+- focus;
+- hover;
+- disabled;
+- errors;
+- empty/loading;
+- consistency with the design system.
 
-Classe :
-- divergence fonctionnelle ;
-- divergence visuelle majeure ;
-- polish mineur.
+Classify:
+- functional divergence;
+- major visual divergence;
+- minor polish.
 
-Ne propose pas de redesign si l'implémentation respecte déjà la spec.
+Do not propose a redesign if the implementation already respects the specification.
 
-Sortie : recommandation frontend/design directement exploitable.
+Output: a directly actionable frontend/design recommendation.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une recommandation frontend/design directement exploitable.
+A directly actionable frontend/design recommendation.

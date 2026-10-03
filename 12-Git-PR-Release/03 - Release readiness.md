@@ -1,61 +1,63 @@
 ---
-titre: "Release readiness"
+title: "Release readiness"
 format: prompt
 archetype: checklist
-domaine: git-release
+domain: git-release
 tags:
   - git
   - release
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "artefact Git/release prêt à l'emploi"
-niveau_risque: eleve
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "ready-to-use Git/release artifact"
+risk_level: high
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
 # Release readiness
 
-## Quand l'utiliser
+## When to use it
 
-Avant production.
+Before production.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Évalue si cette release est prête.
+Evaluate whether this release is ready.
 
-Vérifie :
-- contenu exact ;
-- migrations ;
-- flags ;
-- configuration ;
-- secrets ;
-- observabilité ;
-- alertes ;
-- rollback ;
-- tests ;
-- compatibilité ;
-- documentation opératoire ;
-- risques connus.
+Verify:
+- exact content;
+- migrations;
+- flags;
+- configuration;
+- secrets;
+- observability;
+- alerts;
+- rollback;
+- tests;
+- compatibility;
+- operational documentation;
+- known risks.
 
-Réponds READY ou BLOCKED avec éléments précis.
+Reply READY or BLOCKED with precise items.
 
-Sortie : artefact Git/release prêt à l'emploi.
+Output: a ready-to-use Git/release artifact.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Un artefact Git/release prêt à l'emploi.
+A ready-to-use Git/release artifact.

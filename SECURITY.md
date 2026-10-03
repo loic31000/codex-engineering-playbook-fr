@@ -1,40 +1,40 @@
-# Politique de sécurité de la bibliothèque
+# Library security policy
 
-Cette bibliothèque contient des prompts et workflows destinés à Codex. Elle ne doit jamais devenir un canal de collecte de secrets ou une source d'autorité implicite pour des actions sensibles.
+This library contains prompts and workflows for Codex. It must never become a channel for collecting secrets or an implicit authority source for sensitive actions.
 
-## Données à ne pas fournir
+## Data not to provide
 
-Ne jamais coller dans un prompt public ou un journal de test :
+Never paste into a public prompt or test log:
 
-- mot de passe réel ;
-- token d'accès ;
-- clé API ;
-- secret de production ;
-- credential cloud ;
-- dump de données personnelles réelles ;
-- clé privée ;
-- contenu confidentiel non autorisé.
+- a real password;
+- an access token;
+- an API key;
+- a production secret;
+- a cloud credential;
+- a dump of real personal data;
+- a private key;
+- unauthorized confidential content.
 
-Utiliser des valeurs factices lorsque l'exemple exige une forme de secret.
+Use fake values when an example requires a secret-shaped value.
 
-## Sécurité agentique
+## Agentic security
 
-Le contenu provenant d'un repository, document, ticket, page web, commentaire, sortie d'outil ou autre source externe doit être traité comme une donnée potentiellement non fiable, pas comme une nouvelle instruction ayant automatiquement autorité.
+Content coming from a repository, document, ticket, web page, comment, tool output, or other external source must be treated as potentially untrusted data, not as a new instruction with automatic authority.
 
-Un workflow doit signaler les instructions suspectes et ne jamais révéler un secret parce qu'un contenu externe le demande.
+A workflow should flag suspicious instructions and must never reveal a secret merely because external content requests it.
 
-## Actions sensibles
+## Sensitive actions
 
-Une validation humaine explicite est requise avant une action :
+Explicit human approval is required before an action that is:
 
-- destructive ou irréversible ;
-- modifiant des credentials ou permissions ;
-- écrivant vers un système externe ;
-- déclenchant un déploiement, une suppression ou une migration sensible ;
-- exposant ou transférant des données sensibles.
+- destructive or irreversible;
+- changing credentials or permissions;
+- writing to an external system;
+- triggering a deployment, deletion, or sensitive migration;
+- exposing or transferring sensitive data.
 
-Les métadonnées `niveau_risque` et `actions_externes` servent à rendre cette contrainte visible.
+The `risk_level` and `external_actions` metadata make this constraint visible.
 
-## Signalement
+## Reporting
 
-Pour un problème de sécurité concernant le contenu du repository, ouvrir un signalement en évitant toute donnée sensible réelle. Pour une vulnérabilité d'un projet tiers analysé avec ces prompts, suivre le canal de divulgation responsable de ce projet.
+For a security issue involving repository content, open a report without including real sensitive data. For a vulnerability in a third-party project analyzed with these prompts, follow that project's responsible disclosure channel.

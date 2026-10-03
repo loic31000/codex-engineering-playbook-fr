@@ -1,55 +1,57 @@
 ---
-titre: "Rédiger changelog"
+title: "Write changelog"
 format: prompt
 archetype: template
-domaine: git-release
+domain: git-release
 tags:
   - git
   - release
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "artefact Git/release prêt à l'emploi"
-niveau_risque: eleve
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "ready-to-use Git/release artifact"
+risk_level: high
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Rédiger changelog
+# Write changelog
 
-## Quand l'utiliser
+## When to use it
 
-Après release.
+After a release.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Rédige une entrée de changelog orientée utilisateur/développeur selon le public.
+Write a changelog entry for the intended audience, whether users or developers.
 
-Sépare :
-- Added ;
-- Changed ;
-- Fixed ;
-- Deprecated ;
-- Security ;
+Separate:
+- Added;
+- Changed;
+- Fixed;
+- Deprecated;
+- Security;
 - Breaking changes.
 
-Ne mentionne pas les détails internes sans intérêt pour le lecteur.
+Do not mention internal details that have no value for the reader.
 
-Sortie : artefact Git/release prêt à l'emploi.
+Output: a ready-to-use Git/release artifact.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Un artefact Git/release prêt à l'emploi.
+A ready-to-use Git/release artifact.

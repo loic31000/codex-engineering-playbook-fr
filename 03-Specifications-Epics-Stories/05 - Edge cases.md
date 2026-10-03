@@ -1,68 +1,70 @@
 ---
-titre: "Trouver les edge cases"
+title: "Find edge cases"
 format: prompt
 archetype: instruction
-domaine: specifications
+domain: specifications
 tags:
   - spec
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "liste d'edge cases priorisée"
-niveau_risque: faible
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "prioritized list of edge cases"
+risk_level: low
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Trouver les edge cases
+# Find edge cases
 
-## Quand l'utiliser
+## When to use it
 
-Avant de déclarer une Story prête.
+Before declaring a Story ready.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Analyse cette fonctionnalité exclusivement sous l'angle des edge cases.
+Analyze this feature exclusively from the perspective of edge cases.
 
-Cherche :
-- valeurs vides ;
-- valeurs limites ;
-- doublons ;
-- concurrence ;
-- retry ;
-- timeouts ;
-- permissions ;
-- session expirée ;
-- données supprimées/modifiées ;
-- erreurs réseau ;
-- état partiel ;
-- idempotence ;
-- multi-tenant ;
-- timezone/locale ;
-- mobile/responsive si UI.
+Look for:
+- empty values;
+- boundary values;
+- duplicates;
+- concurrency;
+- retries;
+- timeouts;
+- permissions;
+- expired sessions;
+- deleted/modified data;
+- network errors;
+- partial state;
+- idempotency;
+- multi-tenancy;
+- timezone/locale;
+- mobile/responsive behavior for UI.
 
-Classe :
-- à couvrir obligatoirement ;
-- utile mais secondaire ;
-- hors scope.
+Classify:
+- must be covered;
+- useful but secondary;
+- out of scope.
 
-N'élargis pas automatiquement la Story.
+Do not automatically expand the Story.
 
-Sortie : liste d'edge cases priorisée.
+Output: a prioritized list of edge cases.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une liste d'edge cases priorisée.
+A prioritized list of edge cases.

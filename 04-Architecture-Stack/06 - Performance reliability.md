@@ -1,67 +1,69 @@
 ---
-titre: "Architecture performance et résilience"
+title: "Performance and reliability architecture"
 format: prompt
 archetype: instruction
-domaine: architecture
+domain: architecture
 tags:
   - architecture
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "analyse ou décision architecturale structurée"
-niveau_risque: moyen
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "structured architecture analysis or decision"
+risk_level: medium
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Architecture performance et résilience
+# Performance and reliability architecture
 
-## Quand l'utiliser
+## When to use it
 
-Quand la feature a des enjeux de charge, latence ou disponibilité.
+When a feature has load, latency, or availability concerns.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Analyse cette architecture sous l'angle performance et résilience.
+Analyze this architecture from a performance and reliability perspective.
 
-Évalue :
-- chemin critique ;
-- latence ;
-- débit ;
-- contention ;
-- cache ;
-- I/O ;
-- timeouts ;
-- retries ;
-- idempotence ;
-- backpressure ;
-- circuit breakers ;
-- queues ;
-- dégradation ;
-- recovery ;
-- observabilité.
+Evaluate:
+- critical path;
+- latency;
+- throughput;
+- contention;
+- cache;
+- I/O;
+- timeouts;
+- retries;
+- idempotency;
+- backpressure;
+- circuit breakers;
+- queues;
+- degradation;
+- recovery;
+- observability.
 
-N'optimise pas prématurément.
-Sépare :
-- risques démontrés ;
-- risques plausibles ;
-- optimisations à mesurer avant décision.
+Do not optimize prematurely.
+Separate:
+- demonstrated risks;
+- plausible risks;
+- optimizations that should be measured before deciding.
 
-Sortie : analyse ou décision architecturale structurée.
+Output: a structured architecture analysis or decision.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une analyse ou décision architecturale structurée.
+A structured architecture analysis or decision.

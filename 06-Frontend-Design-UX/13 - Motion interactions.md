@@ -1,64 +1,66 @@
 ---
-titre: "Motion et micro-interactions"
+title: "Motion and micro-interactions"
 format: prompt
 archetype: instruction
-domaine: frontend-design-ux
+domain: frontend-design-ux
 tags:
   - frontend
   - design
   - ux
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "recommandation frontend/design directement exploitable"
-niveau_risque: faible
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "directly actionable frontend/design recommendation"
+risk_level: low
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Motion et micro-interactions
+# Motion and micro-interactions
 
-## Quand l'utiliser
+## When to use it
 
-Pour ajouter animation sans nuire à l'usage.
+When adding animation without harming usability.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Définis une stratégie de motion fonctionnelle.
+Define a functional motion strategy.
 
-Pour chaque animation proposée :
-- objectif ;
-- déclencheur ;
-- durée relative ;
-- easing ;
-- propriété animée ;
-- comportement interruption ;
-- reduced-motion ;
-- impact performance.
+For each proposed animation:
+- objective;
+- trigger;
+- relative duration;
+- easing;
+- animated property;
+- interruption behavior;
+- reduced-motion behavior;
+- performance impact.
 
-Utilise la motion pour :
-- continuité ;
-- feedback ;
-- orientation ;
-- hiérarchie.
+Use motion for:
+- continuity;
+- feedback;
+- orientation;
+- hierarchy.
 
-Évite l'animation décorative qui ralentit l'utilisateur.
+Avoid decorative animation that slows users down.
 
-Sortie : recommandation frontend/design directement exploitable.
+Output: a directly actionable frontend/design recommendation.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une recommandation frontend/design directement exploitable.
+A directly actionable frontend/design recommendation.

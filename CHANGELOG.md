@@ -2,66 +2,66 @@
 
 ## 0.2.0 — 2026-10-03
 
-Révision structurelle issue de l'audit approfondi du playbook.
+Structural revision based on the in-depth audit of the playbook.
 
-### Modifié
+### Changed
 
-- contrat de sortie intégré aux blocs copiables ;
-- métadonnées enrichies : format, archetype, domaine, entrées, risque, validation ;
-- prompts prioritaires réécrits : Story, modules, direction visuelle, WCAG, sécurité feature, privacy, implémentation Story, code review ;
-- terminologie normalisée : constat, bloquant, vérifications ;
-- cycle de vie renforcé avec revalidation des prompts stables ;
-- journal de tests enrichi avec cinq cas et score /12 ;
-- documentation de contribution et sécurité mise à jour.
+- output contract integrated into copyable blocks;
+- enriched metadata: format, archetype, domain, inputs, risk, validation;
+- priority prompts rewritten: Story, modules, visual direction, WCAG, feature security, privacy, Story implementation, code review;
+- normalized terminology;
+- stronger lifecycle with revalidation of stable prompts;
+- test log expanded with five cases and a /12 score;
+- contribution and security documentation updated.
 
-### Ajouté
+### Added
 
-- sécurité agentique et prompt injection ;
-- test d'un prompt ;
-- review par référence visuelle / screenshot ;
-- internationalisation, RTL et textes longs ;
-- boucle screenshot → comparaison → correction ;
-- glossaire technique.
+- agentic security and prompt injection;
+- prompt testing;
+- visual reference / screenshot review;
+- internationalization, RTL, and long text;
+- screenshot → compare → fix loop;
+- technical glossary.
 
 ### Validation
 
-Aucun prompt n'est promu automatiquement à `stable`. Les compteurs de tests réels restent à zéro tant qu'aucun usage n'est documenté.
+No prompt is automatically promoted to `stable`. Real-world test counters remain at zero until actual usage is documented.
 
 ---
 
-Ce changelog suit l’évolution de la bibliothèque elle-même.
+This changelog tracks the evolution of the library itself.
 
 ## Unreleased
 
-### Ajouté
+### Added
 
-- Préparation du repository pour GitHub.
-- Cycle de maturité `draft → testing → stable → deprecated`.
-- Conventions de contribution.
+- GitHub repository preparation.
+- Maturity lifecycle `draft → testing → stable → deprecated`.
+- Contribution conventions.
 - Roadmap.
-- Templates d’Issues GitHub en Markdown.
-- Template de Pull Request.
-- Politique de sécurité de la bibliothèque.
-- Métadonnées de maturité sur les prompts existants.
+- GitHub Issue templates in Markdown.
+- Pull Request template.
+- Library security policy.
+- Maturity metadata on existing prompts.
 
 ## 0.1.0 — 2026-10-02
 
-### Ajouté
+### Added
 
-- Première bibliothèque complète de prompts Codex en français.
-- Découverte projet.
-- Produit et scope.
-- Epics, Stories et critères d’acceptation.
-- Architecture et stack.
-- Data, API et intégrations.
-- Frontend, UX et design.
-- Sécurité et privacy.
-- Planification.
-- Implémentation.
-- Tests et qualité.
-- Review et convergence.
-- Git, PR et release.
-- Debug et maintenance.
+- First complete English mirror of the Codex prompt library, translated from the French source.
+- Project discovery.
+- Product and scope.
+- Epics, Stories, and acceptance criteria.
+- Architecture and stack.
+- Data, API, and integrations.
+- Frontend, UX, and design.
+- Security and privacy.
+- Planning.
+- Implementation.
+- Testing and quality.
+- Review and convergence.
+- Git, PR, and release.
+- Debug and maintenance.
 - Documentation.
 - Meta-prompting.
-- Checklists et références.
+- Checklists and references.

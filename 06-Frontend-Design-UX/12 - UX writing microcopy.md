@@ -1,55 +1,59 @@
 ---
-titre: "UX writing et microcopy"
+title: "UX writing and microcopy"
 format: prompt
 archetype: instruction
-domaine: frontend-design-ux
+domain: frontend-design-ux
 tags:
   - frontend
   - design
   - ux
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "recommandation frontend/design directement exploitable"
-niveau_risque: faible
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "directly actionable frontend/design recommendation"
+risk_level: low
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# UX writing et microcopy
+# UX writing and microcopy
 
-## Quand l'utiliser
+## When to use it
 
-Quand les textes UI manquent de clarté.
+When UI text lacks clarity.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Revois les textes de cette interface comme un UX writer.
+Review the text in this interface as a UX writer.
 
-Pour chaque texte :
-- rendre l'action explicite ;
-- éviter jargon ;
-- éviter ambiguïté ;
-- préciser conséquences ;
-- améliorer messages d'erreur ;
-- améliorer empty states ;
-- améliorer confirmations ;
-- conserver un ton cohérent.
+For each piece of text:
+- make the action explicit;
+- avoid jargon;
+- avoid ambiguity;
+- clarify consequences;
+- improve error messages;
+- improve empty states;
+- improve confirmations;
+- preserve a consistent tone.
 
-Ne rends pas les textes plus longs sans nécessité.
-Privilégie clarté et action.
+Do not make text longer without a reason.
+Prioritize clarity and action.
+
+Output: a directly actionable frontend/design recommendation.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une recommandation frontend/design directement exploitable.
+A directly actionable frontend/design recommendation.

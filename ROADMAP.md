@@ -1,131 +1,130 @@
 # Roadmap
 
-La roadmap n’est pas un engagement de dates. Elle sert à choisir les prochains domaines à enrichir.
+The roadmap is not a date commitment. It helps choose the next domains to expand.
 
-## Priorité 1 — Stabiliser l’existant
+## Priority 1 — Stabilize what already exists
 
-- [ ] Tester les prompts les plus utilisés avec Codex.
-- [ ] Promouvoir les bons prompts de `draft` vers `testing`.
-- [ ] Documenter les échecs ou limites rencontrés.
-- [ ] Fusionner les prompts trop proches.
-- [ ] Réduire les prompts inutilement longs.
-- [ ] Créer quelques exemples de sorties de référence.
+- [ ] Test the most-used prompts with Codex.
+- [ ] Promote good prompts from `draft` to `testing`.
+- [ ] Document observed failures or limitations.
+- [ ] Merge prompts that are too similar.
+- [ ] Reduce unnecessarily long prompts.
+- [ ] Create a few reference output examples.
 
-## Priorité 2 — Frontend & Design avancé
+## Priority 2 — Advanced Frontend & Design
 
-- [ ] Audit design system existant.
-- [ ] Composition de pages complexes.
-- [ ] Dashboard et visualisation de données.
-- [ ] Design mobile natif.
-- [ ] Internationalisation UI.
-- [ ] Design pour permissions et rôles complexes.
-- [ ] Audit de cohérence cross-écrans.
-- [ ] Migration/refonte design system.
-- [ ] Storybook et documentation composants.
-- [ ] Tests visuels et régression visuelle.
+- [ ] Audit an existing design system.
+- [ ] Compose complex pages.
+- [ ] Dashboard and data visualization.
+- [ ] Native mobile design.
+- [ ] UI internationalization.
+- [ ] Design for complex permissions and roles.
+- [ ] Cross-screen consistency audit.
+- [ ] Design system migration/redesign.
+- [ ] Storybook and component documentation.
+- [ ] Visual testing and visual regression.
 
-## Priorité 3 — Mobile
+## Priority 3 — Mobile
 
-- [ ] Architecture mobile.
-- [ ] Navigation native.
+- [ ] Mobile architecture.
+- [ ] Native navigation.
 - [ ] Offline-first.
-- [ ] Synchronisation.
-- [ ] Permissions appareil.
+- [ ] Synchronization.
+- [ ] Device permissions.
 - [ ] Notifications.
-- [ ] Performance mobile.
-- [ ] Release App Store / Play Store.
-- [ ] Accessibilité mobile.
+- [ ] Mobile performance.
+- [ ] App Store / Play Store release.
+- [ ] Mobile accessibility.
 
-## Priorité 4 — DevOps / SRE
+## Priority 4 — DevOps / SRE
 
-- [ ] Design CI/CD.
+- [ ] CI/CD design.
 - [ ] Infrastructure as Code.
-- [ ] Environnements.
-- [ ] Observabilité.
+- [ ] Environments.
+- [ ] Observability.
 - [ ] SLO/SLI.
 - [ ] Incident response.
 - [ ] Capacity planning.
 - [ ] Disaster recovery.
-- [ ] Blue/green et canary.
-- [ ] Gestion de configuration.
+- [ ] Blue/green and canary.
+- [ ] Configuration management.
 
-## Priorité 5 — IA / LLM
+## Priority 5 — AI / LLM
 
-- [ ] Architecture application LLM.
+- [ ] LLM application architecture.
 - [ ] RAG.
-- [ ] Evaluation de prompts.
-- [ ] Evaluation de réponses.
+- [ ] Prompt evaluation.
+- [ ] Response evaluation.
 - [ ] Guardrails.
 - [ ] Tool calling.
 - [ ] Agents.
-- [ ] Mémoire.
-- [ ] Sécurité prompt injection.
-- [ ] Coûts tokens au niveau architecture, pas User Story.
-- [ ] Observabilité LLM.
+- [ ] Memory.
+- [ ] Prompt injection security.
+- [ ] Token costs at the architecture level, not in User Stories.
+- [ ] LLM observability.
 
-## Priorité 6 — Data Engineering
+## Priority 6 — Data Engineering
 
 - [ ] ETL/ELT.
 - [ ] Data quality.
-- [ ] Schémas et contrats.
+- [ ] Schemas and contracts.
 - [ ] Pipelines.
 - [ ] Batch vs streaming.
 - [ ] Lineage.
 - [ ] Backfill.
 - [ ] Analytics engineering.
 - [ ] Data warehouse.
-- [ ] Gouvernance des données.
+- [ ] Data governance.
 
-## Priorité 7 — Sécurité avancée
+## Priority 7 — Advanced Security
 
 - [ ] OAuth/OIDC review.
 - [ ] Passkeys.
-- [ ] Cryptographie appliquée.
+- [ ] Applied cryptography.
 - [ ] Secure SDLC.
-- [ ] Threat modeling STRIDE ciblé.
-- [ ] Supply-chain avancée.
-- [ ] Secrets rotation.
+- [ ] Focused STRIDE threat modeling.
+- [ ] Advanced supply chain.
+- [ ] Secret rotation.
 - [ ] Security incident response.
 - [ ] Abuse cases.
-- [ ] API security avancée.
+- [ ] Advanced API security.
 
-## Priorité 8 — Architecture avancée
+## Priority 8 — Advanced Architecture
 
 - [ ] Event-driven.
 - [ ] Distributed systems.
 - [ ] CQRS.
 - [ ] Event sourcing.
-- [ ] Architecture multi-région.
-- [ ] Architecture offline/sync.
-- [ ] Migration monolithe → services.
-- [ ] Architecture review de systèmes legacy.
+- [ ] Multi-region architecture.
+- [ ] Offline/sync architecture.
+- [ ] Monolith → services migration.
+- [ ] Legacy system architecture review.
 
-## Backlog libre
+## Free backlog
 
-Ajoute ici les idées avant de créer une Issue :
+Add ideas here before creating an Issue:
 
 - [ ] ...
 
+## V0.2 — 2026 audit recommendations
 
-## V0.2 — recommandations de l'audit 2026
+Structurally completed:
 
-Réalisé structurellement :
+- [x] output contract in copyable prompts;
+- [x] separation of `format` / `archetype`;
+- [x] validation and risk metadata;
+- [x] agentic security / prompt injection;
+- [x] frontend: screenshot/reference, i18n/RTL, visual correction loop;
+- [x] WCAG clarification: compliance vs best practices;
+- [x] technical glossary;
+- [x] testing and revalidation protocol.
 
-- [x] contrat de sortie dans les prompts copiables ;
-- [x] séparation `format` / `archetype` ;
-- [x] métadonnées de validation et risque ;
-- [x] sécurité agentique / prompt injection ;
-- [x] frontend : screenshot/référence, i18n/RTL, boucle de correction visuelle ;
-- [x] clarification WCAG conformité vs bonnes pratiques ;
-- [x] glossaire technique ;
-- [x] protocole de tests et revalidation.
+To validate through real usage:
 
-À valider par l'usage :
-
-- [ ] tester en priorité Implémentation ;
-- [ ] puis Review / convergence ;
-- [ ] puis Sécurité / Privacy ;
-- [ ] puis Frontend / Design / UX ;
-- [ ] puis Specs / Stories ;
-- [ ] constituer un premier noyau de 20–30 prompts `stable` ;
-- [ ] ne pas promouvoir artificiellement les autres prompts sans résultats réels.
+- [ ] test Implementation first;
+- [ ] then Review / convergence;
+- [ ] then Security / Privacy;
+- [ ] then Frontend / Design / UX;
+- [ ] then Specs / Stories;
+- [ ] build a first core of 20–30 `stable` prompts;
+- [ ] do not artificially promote other prompts without real results.

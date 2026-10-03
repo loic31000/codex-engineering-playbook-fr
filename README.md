@@ -1,26 +1,28 @@
-# Bibliothèque de Prompts & Skills pour Codex
+# Prompt & Skill Library for Codex
 
-Bibliothèque personnelle et évolutive de **prompts, workflows, skills, checklists et références d’ingénierie logicielle**, pensée pour être utilisée dans **Obsidian** et versionnée sur **GitHub**.
+A personal and evolving library of **prompts, workflows, skills, checklists, and software engineering references**, designed for use in **Obsidian** and versioned on **GitHub**.
 
-Tout le repository est en **Markdown** et en **français**.
+The entire repository is **Markdown** and **English**.
 
-## Objectif
+> English branch: `en`. The French `main` branch remains the source of truth. English files should track their French source version when applicable.
 
-Le but n’est pas de collectionner des « prompts magiques ».
+## Goal
 
-Le but est de construire progressivement une bibliothèque de **workflows d’ingénierie testés avec Codex** pour couvrir tout le cycle de développement :
+The goal is not to collect "magic prompts."
+
+The goal is to progressively build a library of **engineering workflows tested with Codex** covering the full development lifecycle:
 
 ```text
-Idée
-→ découverte
-→ produit
-→ spécification
+Idea
+→ discovery
+→ product
+→ specification
 → architecture
 → UX/UI/design
-→ sécurité
-→ planification
-→ implémentation
-→ tests
+→ security
+→ planning
+→ implementation
+→ testing
 → review
 → convergence
 → PR
@@ -28,22 +30,22 @@ Idée
 → maintenance
 ```
 
-## Utilisation dans Obsidian
+## Using it in Obsidian
 
-Ouvre simplement la racine du repository comme Vault Obsidian.
+Simply open the repository root as an Obsidian vault.
 
-Commence par :
+Start with:
 
-- [[00-Accueil/00 - Commencer ici]]
-- [[00-Accueil/01 - Workflow quotidien]]
-- [[00-Accueil/03 - Choisir le bon prompt]]
-- [[00-Accueil/04 - Index complet]]
-- [[00-Accueil/05 - Cycle de vie des prompts]]
-- [[00-Accueil/06 - Conventions de la bibliothèque]]
+- [[00-Home/00 - Start here]]
+- [[00-Home/01 - Daily workflow]]
+- [[00-Home/03 - Choose the right prompt]]
+- [[00-Home/04 - Full index]]
+- [[00-Home/05 - Prompt lifecycle]]
+- [[00-Home/06 - Library conventions]]
 
-## Statuts
+## Statuses
 
-Chaque prompt peut évoluer selon quatre états :
+Each prompt can evolve through four states:
 
 ```text
 draft
@@ -57,44 +59,44 @@ deprecated
 
 ### `draft`
 
-Le prompt existe mais n’a pas encore été suffisamment éprouvé.
+The prompt exists but has not yet been sufficiently proven.
 
 ### `testing`
 
-Le prompt est actuellement utilisé sur de vrais cas avec Codex.
+The prompt is currently being used on real cases with Codex.
 
 ### `stable`
 
-Le prompt a produit des résultats satisfaisants sur plusieurs cas réels et ses limites sont comprises.
+The prompt has produced satisfactory results on multiple real cases and its limitations are understood.
 
 ### `deprecated`
 
-Le prompt est conservé pour historique mais ne devrait plus être utilisé.
+The prompt is kept for historical purposes but should no longer be used.
 
-## Règle de promotion vers `stable`
+## Promotion rule for `stable`
 
-Un prompt ne devrait normalement devenir `stable` qu’après :
+A prompt should normally become `stable` only after:
 
-- au moins 3 utilisations réelles ;
-- aucun problème critique connu ;
-- une sortie suffisamment reproductible ;
-- des instructions qui restent compréhensibles sans contexte caché ;
-- une vérification qu’il ne pousse pas Codex à élargir silencieusement le scope.
+- at least 3 real-world uses;
+- no known critical issue;
+- sufficiently reproducible output;
+- instructions that remain understandable without hidden context;
+- verification that it does not push Codex to silently expand scope.
 
 ## Structure
 
 ```text
-00-Accueil/
-01-Decouverte-Projet/
-02-Produit-Scope/
+00-Home/
+01-Project-Discovery/
+02-Product-Scope/
 03-Specifications-Epics-Stories/
 04-Architecture-Stack/
 05-Data-API-Integrations/
 06-Frontend-Design-UX/
-07-Securite-Privacy/
-08-Planification-Taches/
+07-Security-Privacy/
+08-Planning-Tasks/
 09-Implementation/
-10-Tests-Qualite/
+10-Testing-Quality/
 11-Review-Convergence/
 12-Git-PR-Release/
 13-Debug-Maintenance/
@@ -103,72 +105,71 @@ Un prompt ne devrait normalement devenir `stable` qu’après :
 16-Checklists-References/
 ```
 
-Le frontend et le design disposent notamment de prompts dédiés pour :
+Frontend and design include dedicated prompts for:
 
-- architecture frontend ;
-- direction visuelle ;
-- design system ;
-- tokens ;
-- écrans ;
-- composants ;
-- navigation ;
-- responsive ;
-- accessibilité ;
-- formulaires ;
-- états loading/empty/error ;
-- UX writing ;
-- motion ;
-- Core Web Vitals ;
-- visual QA ;
-- dark mode ;
-- review frontend finale.
+- frontend architecture;
+- visual direction;
+- design system;
+- tokens;
+- screens;
+- components;
+- navigation;
+- responsive design;
+- accessibility;
+- forms;
+- loading/empty/error states;
+- UX writing;
+- motion;
+- Core Web Vitals;
+- visual QA;
+- dark mode;
+- final frontend review.
 
-## Philosophie
+## Philosophy
 
-Un bon prompt de travail doit favoriser :
+A good working prompt should encourage:
 
-- objectif clair ;
-- contexte pertinent ;
-- scope explicite ;
-- contraintes connues ;
-- sortie attendue ;
-- critères de succès ;
-- vérification ;
-- condition d’arrêt lorsqu’une décision importante manque.
+- a clear objective;
+- relevant context;
+- explicit scope;
+- known constraints;
+- expected output;
+- success criteria;
+- verification;
+- a stop condition when an important decision is missing.
 
-La bibliothèque évite autant que possible :
+The library avoids as much as possible:
 
-- les méga-prompts ;
-- le micro-management du raisonnement ;
-- les décisions inventées par l’agent ;
-- les critères vagues ;
-- les prompts qui confondent génération de code et fin réelle de la tâche.
+- mega-prompts;
+- micromanaging reasoning;
+- decisions invented by the agent;
+- vague criteria;
+- prompts that confuse code generation with actual task completion.
 
-## Contribuer
+## Contributing
 
-Voir [[CONTRIBUTING]].
+See [[CONTRIBUTING]].
 
 ## Roadmap
 
-Voir [[ROADMAP]].
+See [[ROADMAP]].
 
-## Licence
+## License
 
-MIT — voir [[LICENSE]].
+MIT — see [[LICENSE]].
 
+## V0.2 evolution — October 2026 audit
 
-## Évolution V0.2 — audit octobre 2026
+V0.2 applies the recommendations from the library's in-depth audit:
 
-La V0.2 applique les recommandations de l'audit approfondi de la bibliothèque :
+- output contract integrated into the copyable prompt block;
+- metadata separating `format` and `archetype`;
+- structured inputs, risk level, and validation history;
+- stronger uncertainty handling without turning files into mega-prompts;
+- agentic security and prompt injection;
+- expanded frontend coverage: visual references, i18n/RTL, and screenshot → compare → fix loop;
+- WCAG: separation of compliance failure / unverifiable point / best practice;
+- real-world testing protocol and revalidation of `stable` prompts;
+- English technical glossary.
 
-- contrat de sortie intégré dans le bloc copiable ;
-- métadonnées séparant `format` et `archetype` ;
-- entrées, niveau de risque et historique de validation structurés ;
-- conditions d'incertitude renforcées sans transformer les fiches en méga-prompts ;
-- sécurité agentique et prompt injection ;
-- frontend enrichi : références visuelles, i18n/RTL et boucle screenshot → comparaison → correction ;
-- WCAG : séparation conformité / non vérifiable / bonne pratique ;
-- protocole de tests réels et revalidation des prompts `stable` ;
-- glossaire technique français/anglais.
-
-Les prompts restent `draft` tant qu'ils n'ont pas accumulé de preuves d'usage réel. La révision structurelle ne vaut pas validation empirique.
+Prompts remain `draft` until they accumulate real-world evidence. A structural revision is not empirical validation.

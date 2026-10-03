@@ -1,4 +1,4 @@
-# Licence MIT
+# MIT License
 
 Copyright (c) 2026 Prompt Library Contributors
 

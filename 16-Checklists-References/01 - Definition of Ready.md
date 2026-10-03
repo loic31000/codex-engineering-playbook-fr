@@ -1,17 +1,17 @@
-# Definition of Ready — checklist personnelle
+# Definition of Ready — personal checklist
 
-Avant implémentation :
+Before implementation:
 
-- [ ] objectif clair ;
-- [ ] scope clair ;
-- [ ] hors scope connu ;
-- [ ] Acceptance Criteria testables ;
-- [ ] edge cases critiques identifiés ;
-- [ ] dépendances connues ;
-- [ ] blockers résolus ;
-- [ ] impact sécurité évalué ;
-- [ ] impact data/migration évalué ;
-- [ ] impact UI/UX évalué ;
-- [ ] API/breaking changes identifiés ;
-- [ ] plan produit si complexité suffisante ;
-- [ ] stratégie de vérification connue.
+- [ ] clear objective;
+- [ ] clear scope;
+- [ ] known out-of-scope items;
+- [ ] testable Acceptance Criteria;
+- [ ] critical edge cases identified;
+- [ ] known dependencies;
+- [ ] blockers resolved;
+- [ ] security impact assessed;
+- [ ] data/migration impact assessed;
+- [ ] UI/UX impact assessed;
+- [ ] API/breaking changes identified;
+- [ ] plan produced when complexity requires it;
+- [ ] verification strategy known.

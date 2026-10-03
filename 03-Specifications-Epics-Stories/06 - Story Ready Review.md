@@ -1,68 +1,70 @@
 ---
-titre: "Story Ready Review"
+title: "Story Ready Review"
 format: prompt
 archetype: checklist
-domaine: specifications
+domain: specifications
 tags:
   - spec
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "décision de readiness argumentée"
-niveau_risque: faible
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "reasoned readiness decision"
+risk_level: low
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
 # Story Ready Review
 
-## Quand l'utiliser
+## When to use it
 
-Juste avant l'implémentation.
+Immediately before implementation.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Agis comme gatekeeper de Definition of Ready.
+Act as the Definition of Ready gatekeeper.
 
-Évalue cette Story sans coder.
+Evaluate this Story without coding.
 
-Vérifie :
-- objectif ;
-- scope ;
-- critères d'acceptation ;
-- edge cases ;
-- dépendances ;
-- décisions ouvertes ;
-- architecture impactée ;
-- data/migrations ;
-- sécurité/privacy ;
-- UX/UI ;
-- API/contrats ;
-- stratégie de test ;
-- taille de la Story.
+Verify:
+- objective;
+- scope;
+- acceptance criteria;
+- edge cases;
+- dependencies;
+- open decisions;
+- impacted architecture;
+- data/migrations;
+- security/privacy;
+- UX/UI;
+- APIs/contracts;
+- test strategy;
+- Story size.
 
-Réponds uniquement avec :
-- READY ou BLOCKED ;
-- bloquants ;
-- points non bloquants ;
-- décisions/questions requises ;
-- recommandation : plan formel nécessaire ou non.
+Reply only with:
+- READY or BLOCKED;
+- blockers;
+- non-blocking points;
+- required decisions/questions;
+- recommendation: formal plan required or not.
 
-Sortie : décision de readiness argumentée.
+Output: a reasoned readiness decision.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une décision de readiness argumentée.
+A reasoned readiness decision.

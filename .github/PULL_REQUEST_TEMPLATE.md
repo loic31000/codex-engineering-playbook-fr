@@ -1,38 +1,38 @@
-# Modification
+# Change
 
-Décris brièvement ce qui change.
+Briefly describe what changes.
 
 ## Type
 
-- [ ] Nouveau prompt
-- [ ] Amélioration d’un prompt
-- [ ] Nouvelle checklist/référence
+- [ ] New prompt
+- [ ] Prompt improvement
+- [ ] New checklist/reference
 - [ ] Documentation
-- [ ] Dépréciation
-- [ ] Réorganisation
+- [ ] Deprecation
+- [ ] Reorganization
 
-## Tests réels
+## Real-world tests
 
-- [ ] Non testé — reste `draft`
-- [ ] Testé au moins une fois — `testing`
-- [ ] Suffisamment éprouvé pour `stable`
+- [ ] Not tested — remains `draft`
+- [ ] Tested at least once — `testing`
+- [ ] Sufficiently proven for `stable`
 
-Contexte de test :
+Test context:
 
-## Qualité
+## Quality
 
-- [ ] objectif clair
-- [ ] scope clair
-- [ ] sortie attendue claire
-- [ ] pas de secret demandé
-- [ ] pas de décision inventée
-- [ ] pas de micro-management inutile
-- [ ] condition d’escalade si nécessaire
-- [ ] liens Obsidian vérifiés
+- [ ] clear objective
+- [ ] clear scope
+- [ ] clear expected output
+- [ ] no secret requested
+- [ ] no invented decision
+- [ ] no unnecessary micromanagement
+- [ ] escalation condition when needed
+- [ ] Obsidian links verified
 
-## Compatibilité
+## Compatibility
 
-Cette modification remplace-t-elle un prompt existant ?
+Does this change replace an existing prompt?
 
-- [ ] Non
-- [ ] Oui — le prompt remplacé a été marqué `deprecated`
+- [ ] No
+- [ ] Yes — the replaced prompt has been marked `deprecated`

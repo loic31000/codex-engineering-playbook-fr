@@ -1,60 +1,62 @@
 ---
-titre: "Code review senior"
+title: "Senior code review"
 format: prompt
 archetype: checklist
-domaine: review-convergence
+domain: review-convergence
 tags:
   - review
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "review priorisée et actionnable"
-niveau_risque: moyen
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "prioritized and actionable review"
+risk_level: medium
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Code review senior
+# Senior code review
 
-## Quand l'utiliser
+## When to use it
 
-Avant merge ou après implémentation.
+Before merge or after implementation.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Revois uniquement le diff fourni comme reviewer senior.
+Review only the provided diff as a senior reviewer.
 
-Priorise :
-bugs, sécurité, critères d'acceptation, régressions, intégrité des données, contrats publics, architecture, performance significative et tests manquants.
+Prioritize:
+bugs, security, acceptance criteria, regressions, data integrity, public contracts, architecture, meaningful performance issues, and missing tests.
 
-Pour chaque constat, retourne :
-- sévérité : critique / haute / moyenne / faible ;
-- fichier et zone concernée ;
-- preuve observable dans le diff ;
-- scénario concret de défaillance ;
-- correction minimale recommandée ;
-- test ou vérification permettant de confirmer la correction.
+For each finding, return:
+- severity: critical / high / medium / low;
+- affected file and area;
+- observable evidence in the diff;
+- concrete failure scenario;
+- recommended minimal correction;
+- test or verification that confirms the correction.
 
-Distingue explicitement :
-- défaut confirmé ;
-- risque plausible à vérifier.
+Explicitly distinguish:
+- confirmed defect;
+- plausible risk to verify.
 
-N'invente pas un défaut sans preuve suffisante.
-Ne signale pas de préférence stylistique sans impact réel.
+Do not invent a defect without sufficient evidence.
+Do not report stylistic preferences without real impact.
 
-S'il n'y a aucun problème significatif, dis-le explicitement.
+If there is no significant issue, say so explicitly.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une review priorisée et actionnable.
+A prioritized and actionable review.

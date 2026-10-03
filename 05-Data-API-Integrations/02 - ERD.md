@@ -1,61 +1,63 @@
 ---
-titre: "Préparer un ERD"
+title: "Prepare an ERD"
 format: prompt
 archetype: template
-domaine: data-api
+domain: data-api
 tags:
   - data
   - api
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "design de données/API explicite et vérifiable"
-niveau_risque: moyen
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "explicit and verifiable data/API design"
+risk_level: medium
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Préparer un ERD
+# Prepare an ERD
 
-## Quand l'utiliser
+## When to use it
 
-Quand tu veux formaliser les relations avant migration.
+When you want to formalize relationships before a migration.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Transforme ce modèle métier en description d'ERD.
+Transform this business model into an ERD description.
 
-Inclure :
-- entités ;
-- PK ;
-- FK ;
-- relations ;
-- cardinalités ;
-- contraintes importantes ;
-- tables d'association ;
-- ownership tenant si applicable.
+Include:
+- entities;
+- PKs;
+- FKs;
+- relationships;
+- cardinalities;
+- important constraints;
+- association tables;
+- tenant ownership when applicable.
 
-Ajoute une section :
-- risques d'intégrité ;
-- décisions de normalisation ;
-- index potentiels à mesurer ;
-- points à clarifier.
+Add a section for:
+- integrity risks;
+- normalization decisions;
+- potential indexes to measure;
+- points to clarify.
 
-Sortie : design de données/API explicite et vérifiable.
+Output: explicit and verifiable data/API design.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Un design de données/API explicite et vérifiable.
+An explicit and verifiable data/API design.

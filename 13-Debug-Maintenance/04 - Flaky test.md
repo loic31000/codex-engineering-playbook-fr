@@ -1,61 +1,63 @@
 ---
-titre: "Diagnostiquer un test flaky"
+title: "Diagnose a flaky test"
 format: prompt
 archetype: workflow
-domaine: debug-maintenance
+domain: debug-maintenance
 tags:
   - debug
   - maintenance
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "diagnostic ou plan de maintenance fondé sur des preuves"
-niveau_risque: eleve
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "evidence-based diagnosis or maintenance plan"
+risk_level: high
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Diagnostiquer un test flaky
+# Diagnose a flaky test
 
-## Quand l'utiliser
+## When to use it
 
-Quand un test passe/échoue aléatoirement.
+When a test passes and fails intermittently.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Analyse ce test flaky.
+Analyze this flaky test.
 
-Cherche :
-- temps ;
-- ordre ;
-- état partagé ;
-- concurrence ;
-- réseau ;
-- random ;
-- timezone ;
-- ressources ;
-- race condition ;
-- cleanup ;
-- isolation DB ;
-- assertions asynchrones.
+Look for:
+- timing;
+- order;
+- shared state;
+- concurrency;
+- network;
+- randomness;
+- timezone;
+- resources;
+- race condition;
+- cleanup;
+- DB isolation;
+- asynchronous assertions.
 
-Propose d'abord comment reproduire/amplifier le problème, puis le correctif.
+First propose how to reproduce or amplify the problem, then propose the fix.
 
-Sortie : diagnostic ou plan de maintenance fondé sur des preuves.
+Output: an evidence-based diagnosis or maintenance plan.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Un diagnostic ou plan de maintenance fondé sur des preuves.
+An evidence-based diagnosis or maintenance plan.

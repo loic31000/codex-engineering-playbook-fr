@@ -1,66 +1,67 @@
-# Contribuer à la bibliothèque
+# Contributing to the library
 
-Cette bibliothèque doit rester simple, lisible dans Obsidian et exploitable directement avec Codex.
+This library should remain simple, readable in Obsidian, and directly usable with Codex.
 
-## Avant d’ajouter un prompt
+## Before adding a prompt
 
-Vérifie qu’il ne duplique pas déjà un prompt existant.
+Check that it does not duplicate an existing prompt.
 
-Pose-toi trois questions :
+Ask yourself three questions:
 
-1. Quel problème récurrent ce prompt résout-il ?
-2. À quel moment du workflow doit-il être utilisé ?
-3. Quel résultat observable permet de dire qu’il fonctionne ?
+1. What recurring problem does this prompt solve?
+2. At what point in the workflow should it be used?
+3. What observable result shows that it works?
 
-## Format recommandé
+## Recommended format
 
 ```markdown
 ---
-titre: "Titre du prompt"
-type: prompt
-statut: draft
-version: "0.1.0"
-langue: fr
-outils:
+title: "Prompt title"
+format: prompt
+archetype: instruction
+status: draft
+version: "0.2.0"
+language: en
+tools:
   - codex
-test_reel: false
+real_world_tests: 0
 tags:
-  - domaine
+  - domain
 ---
 
-# Titre
+# Title
 
-## Quand l'utiliser
+## When to use it
 
 ...
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
 ...
 ```
 
-## Sortie attendue
+## Expected output
 
 ...
 
-## Points de contrôle
+## Control points
 
 - [ ] ...
 ```
 
-## Types
+## Archetypes
 
-Valeurs recommandées :
+Recommended values:
 
 ```text
-prompt
-skill
+instruction
+workflow
 checklist
-reference
+template
 ```
 
-## Statuts
+## Statuses
 
 ```text
 draft
@@ -69,121 +70,115 @@ stable
 deprecated
 ```
 
-### Passer de `draft` à `testing`
+### From `draft` to `testing`
 
-Le prompt est utilisé sur un vrai projet.
+The prompt is used on a real project.
 
-Mettre :
+Update its real-world test metadata and record the run in the test log.
 
-```yaml
-statut: testing
-test_reel: true
-```
+### From `testing` to `stable`
 
-### Passer de `testing` à `stable`
+Recommended criteria:
 
-Critères recommandés :
+- at least 3 real-world uses;
+- satisfactory results across multiple contexts;
+- no known major ambiguity;
+- no known tendency to silently expand scope;
+- sufficiently stable expected output;
+- documented limitations when needed.
 
-- au moins 3 utilisations réelles ;
-- résultats satisfaisants sur plusieurs contextes ;
-- aucune ambiguïté majeure connue ;
-- aucune tendance connue à élargir silencieusement le scope ;
-- sortie attendue suffisamment stable ;
-- limitations documentées si nécessaire.
-
-La version peut alors passer à :
+The version can then move to:
 
 ```yaml
 version: "1.0.0"
-statut: stable
+status: stable
 ```
 
 ### `deprecated`
 
-Ne supprime pas immédiatement un prompt qui a été largement utilisé.
+Do not immediately delete a prompt that has been widely used.
 
-Passe-le à :
+Set:
 
 ```yaml
-statut: deprecated
+status: deprecated
 ```
 
-et indique le prompt de remplacement.
+and identify the replacement prompt.
 
-## Version d’un prompt
+## Prompt versioning
 
-Convention légère :
+Lightweight convention:
 
-- `0.x.y` : prompt encore expérimental ;
-- `1.0.0` : première version stable ;
-- changement mineur : amélioration sans changement profond d’intention ;
-- changement majeur : workflow ou contrat de sortie significativement modifié.
+- `0.x.y`: still experimental;
+- `1.0.0`: first stable version;
+- minor change: improvement without a deep change in intent;
+- major change: workflow or output contract significantly changed.
 
-## Convention de nommage
+## Naming convention
 
-Dans les catégories :
+Inside categories:
 
 ```text
-NN - Nom explicite.md
+NN - Explicit name.md
 ```
 
-Exemples :
+Examples:
 
 ```text
-01 - Architecture frontend.md
-08 - Accessibilite WCAG.md
+01 - Frontend architecture.md
+08 - WCAG accessibility.md
 15 - Visual QA.md
 ```
 
-Le nom doit expliquer le besoin sans ouvrir le fichier.
+The filename should explain the need without opening the file.
 
-## Qualité d’un prompt
+## Prompt quality
 
-Avant contribution, vérifier :
+Before contributing, verify:
 
-- objectif unique ;
-- contexte suffisant ;
-- scope explicite ;
-- pas d’instruction contradictoire ;
-- pas de raisonnement artificiellement micro-managé ;
-- sortie attendue claire ;
-- critères de vérification ;
-- condition d’escalade si une décision manque ;
-- aucune donnée secrète requise.
+- one objective;
+- sufficient context;
+- explicit scope;
+- no contradictory instruction;
+- no artificial micromanagement of reasoning;
+- clear expected output;
+- verification criteria;
+- escalation condition when a decision is missing;
+- no secret data required.
 
-Utilise [[15-Meta-Prompting/07 - Evaluer qualite prompt]] pour faire une auto-review.
+Use [[15-Meta-Prompting/07 - Evaluate prompt quality]] for a self-review.
 
-## Nouveau domaine
+## New domain
 
-Créer un nouveau dossier uniquement si plusieurs prompts justifient réellement une nouvelle catégorie.
+Create a new folder only if several prompts genuinely justify a new category.
 
-Évite les catégories contenant un seul fichier.
+Avoid categories containing a single file.
 
-## Commits suggérés
+## Suggested commits
 
-Exemples simples :
+Simple examples:
 
 ```text
-prompt(frontend): ajoute review design system
-prompt(security): améliore threat modeling
-docs: complète les conventions
-meta: améliore le template de prompt
+prompt(frontend): add design system review
+prompt(security): improve threat modeling
+docs: expand conventions
+meta: improve prompt template
 ```
 
-Aucune convention de commit n’est obligatoire si tu travailles seul ; la lisibilité est prioritaire.
+No commit convention is mandatory for solo work; readability comes first.
 
+## V0.2 contract for a new prompt
 
-## Contrat V0.2 pour un nouveau prompt
+A new prompt must:
 
-Un nouveau prompt doit :
+- use `format: prompt` and an `archetype` among `instruction`, `workflow`, `checklist`, `template`;
+- declare useful inputs and expected output;
+- place the output contract inside the copyable block;
+- define a stop condition only when ambiguity can materially change the result;
+- avoid massive context and over-guidance;
+- distinguish facts, assumptions, and information to clarify;
+- never request a real secret;
+- flag any external, destructive, irreversible, or sensitive action before execution.
 
-- utiliser `format: prompt` et un `archetype` parmi `instruction`, `workflow`, `checklist`, `template` ;
-- déclarer ses entrées utiles et sa sortie attendue ;
-- mettre le contrat de sortie dans le bloc copiable ;
-- définir une condition d'arrêt uniquement lorsqu'une ambiguïté peut changer matériellement le résultat ;
-- éviter le contexte massif et le sur-guidage ;
-- distinguer faits, hypothèses et informations à clarifier ;
-- ne jamais demander de secret réel ;
-- signaler toute action externe, destructive, irréversible ou sensible avant exécution.
-
-Avant passage à `stable`, documenter au moins trois utilisations réelles et, si possible, les cinq familles de cas du journal de tests.
+Before promotion to `stable`, document at least three real-world uses and, when possible, the five case families from the test log.

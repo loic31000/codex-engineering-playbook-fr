@@ -1,63 +1,65 @@
 ---
-titre: "Concevoir webhooks et intégrations"
+title: "Design webhooks and integrations"
 format: prompt
 archetype: instruction
-domaine: data-api
+domain: data-api
 tags:
   - data
   - api
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "design de données/API explicite et vérifiable"
-niveau_risque: moyen
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "explicit and verifiable data/API design"
+risk_level: medium
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Concevoir webhooks et intégrations
+# Design webhooks and integrations
 
-## Quand l'utiliser
+## When to use it
 
-Pour intégrer des systèmes externes de façon robuste.
+When integrating external systems robustly.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Analyse cette intégration externe.
+Analyze this external integration.
 
-Définis :
-- contrat entrant/sortant ;
-- authentification/signature ;
-- idempotence ;
-- retry ;
-- timeout ;
-- ordre des événements ;
-- replay ;
-- déduplication ;
-- rate limits ;
-- erreurs ;
-- stockage minimal nécessaire ;
-- observabilité ;
-- secret management ;
-- mode dégradé.
+Define:
+- inbound/outbound contract;
+- authentication/signature;
+- idempotency;
+- retries;
+- timeout;
+- event ordering;
+- replay;
+- deduplication;
+- rate limits;
+- errors;
+- minimum required storage;
+- observability;
+- secret management;
+- degraded mode.
 
-Liste les hypothèses dépendantes du fournisseur.
+List assumptions that depend on the provider.
 
-Sortie : design de données/API explicite et vérifiable.
+Output: explicit and verifiable data/API design.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Un design de données/API explicite et vérifiable.
+An explicit and verifiable data/API design.

@@ -1,0 +1,22 @@
+# Security checklist
+
+- [ ] authentication
+- [ ] server-side authorization
+- [ ] object-level access
+- [ ] tenant isolation
+- [ ] input validation
+- [ ] injection
+- [ ] output encoding
+- [ ] CSRF when applicable
+- [ ] SSRF when applicable
+- [ ] uploads
+- [ ] webhooks
+- [ ] rate limiting
+- [ ] secrets
+- [ ] dependencies
+- [ ] PII/logs
+- [ ] audit
+- [ ] migrations
+- [ ] admin
+- [ ] CI/deployment permissions
+- [ ] security tests

@@ -1,59 +1,61 @@
 ---
-titre: "Détecter architecture drift"
+title: "Detect architecture drift"
 format: prompt
 archetype: checklist
-domaine: review-convergence
+domain: review-convergence
 tags:
   - review
-statut: draft
+status: draft
 version: "0.2.0"
-langue: fr-FR
-outils:
+source_branch: main
+source_version: "0.2.0"
+language: en
+tools:
   - codex
-tests_reels: 0
-cas_reussis: 0
-modeles_testes: []
-derniere_validation: null
-derniere_revision: 2026-10-03
-entrees_requises:
-  - contexte-fourni
-sortie_attendue: "review priorisée et actionnable"
-niveau_risque: moyen
-actions_externes: false
-donnees_sensibles: ne_pas_fournir
+real_world_tests: 0
+successful_cases: 0
+models_tested: []
+last_validation: null
+last_revision: 2026-10-03
+required_inputs:
+  - provided-context
+expected_output: "prioritized and actionable review"
+risk_level: medium
+external_actions: false
+sensitive_data: do_not_provide
 ---
 
-# Détecter architecture drift
+# Detect architecture drift
 
-## Quand l'utiliser
+## When to use it
 
-Pour vérifier qu'une feature n'érode pas les frontières.
+To verify that a feature does not erode architectural boundaries.
 
-## Prompt prêt à copier
+## Copy-ready prompt
 
 ```text
-Compare ce changement à l'architecture documentée.
+Compare this change with the documented architecture.
 
-Cherche :
-- dépendance inversée ;
-- accès direct interdit ;
-- logique métier dans mauvaise couche ;
-- duplication de concepts ;
-- dépendance circulaire ;
-- nouvelle abstraction non documentée ;
-- persistance traversant une frontière ;
-- contournement d'API interne.
+Look for:
+- reversed dependency;
+- forbidden direct access;
+- business logic in the wrong layer;
+- duplicated concepts;
+- circular dependency;
+- undocumented new abstraction;
+- persistence crossing a boundary;
+- bypass of an internal API.
 
-Classe :
-- drift bloquant ;
-- dette acceptable ;
-- faux positif.
+Classify:
+- blocking drift;
+- acceptable debt;
+- false positive.
 
-Sortie : review priorisée et actionnable.
+Output: a prioritized and actionable review.
 
-Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
+If missing information materially changes the result, mark it "to clarify" instead of inventing it.
 ```
 
-## Sortie attendue
+## Expected output
 
-Une review priorisée et actionnable.
+A prioritized and actionable review.

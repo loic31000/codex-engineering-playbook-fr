@@ -1,14 +1,26 @@
 ---
 titre: "Créer un skill réutilisable"
-type: prompt
+format: prompt
+archetype: workflow
+domaine: meta-prompting
 tags:
   - prompting
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "prompt ou workflow plus robuste"
+niveau_risque: faible
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Créer un skill réutilisable
@@ -37,6 +49,8 @@ Structure :
 
 Le skill doit être focalisé sur un workflow unique.
 Évite d'y mettre toute la documentation projet.
+
+Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
 ```
 
 ## Sortie attendue

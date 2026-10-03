@@ -1,14 +1,26 @@
 ---
 titre: "Clarifier une Story"
-type: prompt
+format: prompt
+archetype: instruction
+domaine: specifications
 tags:
   - spec
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "Story dont les ambiguïtés importantes sont explicitement traitées"
+niveau_risque: faible
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Clarifier une Story
@@ -35,6 +47,8 @@ Trouve :
 Pose ensuite uniquement les questions qui peuvent modifier le comportement attendu, l'architecture, la sécurité ou le scope.
 
 Après clarification, propose une version révisée sans inventer de réponse.
+
+Sortie : Story dont les ambiguïtés importantes sont explicitement traitées.
 ```
 
 ## Sortie attendue

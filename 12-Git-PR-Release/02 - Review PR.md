@@ -1,15 +1,27 @@
 ---
 titre: "Review de PR"
-type: prompt
+format: prompt
+archetype: checklist
+domaine: git-release
 tags:
   - git
   - release
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "artefact Git/release prêt à l'emploi"
+niveau_risque: eleve
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Review de PR
@@ -36,7 +48,11 @@ Analyse cette PR dans son ensemble, pas seulement fichier par fichier.
 - rollout ;
 - observabilité.
 
-Signale en premier les blockers.
+Signale en premier les bloquants.
+
+Sortie : artefact Git/release prêt à l'emploi.
+
+Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
 ```
 
 ## Sortie attendue

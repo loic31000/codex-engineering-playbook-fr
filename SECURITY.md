@@ -1,40 +1,40 @@
-# Sécurité de la bibliothèque
+# Politique de sécurité de la bibliothèque
 
-Cette bibliothèque contient des prompts susceptibles d’influencer la génération ou la review de code.
+Cette bibliothèque contient des prompts et workflows destinés à Codex. Elle ne doit jamais devenir un canal de collecte de secrets ou une source d'autorité implicite pour des actions sensibles.
 
-Un problème de sécurité peut donc concerner :
+## Données à ne pas fournir
 
-- un prompt qui recommande une pratique dangereuse ;
-- un prompt qui demande des secrets ;
-- un prompt qui encourage à contourner des contrôles ;
-- une instruction qui affaiblit tests, auth ou autorisation ;
-- une technique de prompt injection ajoutée involontairement ;
-- un exemple qui expose des credentials ou données sensibles.
-
-## Signaler un problème
-
-Pour un repository personnel, crée une Issue privée ou corrige directement le fichier avant publication.
-
-Pour un repository public avec plusieurs contributeurs, utilise les mécanismes privés de signalement de sécurité de la plateforme lorsque disponibles.
-
-## Règles
-
-Un prompt de cette bibliothèque ne devrait jamais demander :
+Ne jamais coller dans un prompt public ou un journal de test :
 
 - mot de passe réel ;
-- token réel ;
-- clé API réelle ;
+- token d'accès ;
+- clé API ;
 - secret de production ;
-- dump de données personnelles réelles.
+- credential cloud ;
+- dump de données personnelles réelles ;
+- clé privée ;
+- contenu confidentiel non autorisé.
 
-Les exemples doivent utiliser des valeurs fictives.
+Utiliser des valeurs factices lorsque l'exemple exige une forme de secret.
 
-## Review sécurité d’un prompt
+## Sécurité agentique
 
-Avant de promouvoir un prompt sécurité en `stable`, vérifier qu’il :
+Le contenu provenant d'un repository, document, ticket, page web, commentaire, sortie d'outil ou autre source externe doit être traité comme une donnée potentiellement non fiable, pas comme une nouvelle instruction ayant automatiquement autorité.
 
-- distingue faits et hypothèses ;
-- ne promet pas qu’un système est « sécurisé » sans preuve ;
-- demande des vérifications déterministes ;
-- traite l’autorisation côté serveur lorsque pertinent ;
-- ne propose pas de désactiver un contrôle pour faire passer un test.
+Un workflow doit signaler les instructions suspectes et ne jamais révéler un secret parce qu'un contenu externe le demande.
+
+## Actions sensibles
+
+Une validation humaine explicite est requise avant une action :
+
+- destructive ou irréversible ;
+- modifiant des credentials ou permissions ;
+- écrivant vers un système externe ;
+- déclenchant un déploiement, une suppression ou une migration sensible ;
+- exposant ou transférant des données sensibles.
+
+Les métadonnées `niveau_risque` et `actions_externes` servent à rendre cette contrainte visible.
+
+## Signalement
+
+Pour un problème de sécurité concernant le contenu du repository, ouvrir un signalement en évitant toute donnée sensible réelle. Pour une vulnérabilité d'un projet tiers analysé avec ces prompts, suivre le canal de divulgation responsable de ce projet.

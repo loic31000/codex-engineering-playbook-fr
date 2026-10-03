@@ -155,3 +155,20 @@ Voir [[ROADMAP]].
 ## Licence
 
 MIT — voir [[LICENSE]].
+
+
+## Évolution V0.2 — audit octobre 2026
+
+La V0.2 applique les recommandations de l'audit approfondi de la bibliothèque :
+
+- contrat de sortie intégré dans le bloc copiable ;
+- métadonnées séparant `format` et `archetype` ;
+- entrées, niveau de risque et historique de validation structurés ;
+- conditions d'incertitude renforcées sans transformer les fiches en méga-prompts ;
+- sécurité agentique et prompt injection ;
+- frontend enrichi : références visuelles, i18n/RTL et boucle screenshot → comparaison → correction ;
+- WCAG : séparation conformité / non vérifiable / bonne pratique ;
+- protocole de tests réels et revalidation des prompts `stable` ;
+- glossaire technique français/anglais.
+
+Les prompts restent `draft` tant qu'ils n'ont pas accumulé de preuves d'usage réel. La révision structurelle ne vaut pas validation empirique.

@@ -1,15 +1,27 @@
 ---
 titre: "Planifier une migration de base"
-type: prompt
+format: prompt
+archetype: workflow
+domaine: data-api
 tags:
   - data
   - api
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "design de données/API explicite et vérifiable"
+niveau_risque: moyen
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Planifier une migration de base
@@ -38,6 +50,10 @@ Inclure :
 - tests.
 
 Évite les migrations destructrices en une seule étape si le système est en production.
+
+Sortie : design de données/API explicite et vérifiable.
+
+Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
 ```
 
 ## Sortie attendue

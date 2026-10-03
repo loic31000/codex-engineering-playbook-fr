@@ -1,10 +1,32 @@
 # Prompt & Skill Library for Codex
 
+<p align="center">
+  <a href="https://github.com/loic31000/codex-engineering-playbook-fr/tree/main">
+    <img src="https://img.shields.io/badge/Fran%C3%A7ais-main-0055A4?style=for-the-badge" alt="Français - main">
+  </a>
+  <a href="https://github.com/loic31000/codex-engineering-playbook-fr/tree/en">
+    <img src="https://img.shields.io/badge/English-en-012169?style=for-the-badge" alt="English - en">
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Codex-OpenAI-000000?style=for-the-badge&logo=openai&logoColor=white" alt="Codex / OpenAI">
+  <img src="https://img.shields.io/badge/Markdown-100%25-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown">
+  <img src="https://img.shields.io/badge/Obsidian-Vault-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white" alt="Obsidian">
+  <img src="https://img.shields.io/badge/GitHub-Versioned-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge" alt="MIT License">
+</p>
+
+> 🇬🇧 **English version — `en` branch**  
+> 🇫🇷 The complete French version is available on the **[`main`](https://github.com/loic31000/codex-engineering-playbook-fr/tree/main)** branch.
+
 A personal and evolving library of **prompts, workflows, skills, checklists, and software engineering references**, designed for use in **Obsidian** and versioned on **GitHub**.
 
-The entire repository is **Markdown** and **English**.
+The repository is maintained in two versions:
+- **FR**: `main` — source of truth;
+- **EN**: `en` — English mirror synchronized with the French version.
 
-> English branch: `en`. The French `main` branch remains the source of truth. English files should track their French source version when applicable.
+The library is entirely **Markdown**.
 
 ## Goal
 

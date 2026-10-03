@@ -1,14 +1,26 @@
 ---
 titre: "Évaluer puis ajouter une dépendance"
-type: prompt
+format: prompt
+archetype: workflow
+domaine: implementation
 tags:
   - implementation
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "implémentation contrôlée, testée et dans le scope"
+niveau_risque: eleve
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Évaluer puis ajouter une dépendance
@@ -43,6 +55,10 @@ Si la dépendance est retenue, explique :
 - version ;
 - zone d'usage ;
 - plan de test.
+
+Sortie : implémentation contrôlée, testée et dans le scope.
+
+Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
 ```
 
 ## Sortie attendue

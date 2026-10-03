@@ -184,3 +184,20 @@ Nombre de fichiers Markdown : **133**
 - [[16-Checklists-References/05 - Anti patterns prompts|05 - Anti patterns prompts]]
 - [[16-Checklists-References/06 - Etats de connaissance|06 - Etats de connaissance]]
 - [[16-Checklists-References/07 - References standards|07 - References standards]]
+
+
+## Ajouts V0.2 — audit 2026
+
+### Frontend / Design / UX
+- [[06-Frontend-Design-UX/19 - Review reference visuelle screenshot]]
+- [[06-Frontend-Design-UX/20 - Internationalisation RTL textes longs]]
+- [[06-Frontend-Design-UX/21 - Boucle screenshot comparaison correction]]
+
+### Sécurité / Privacy
+- [[07-Securite-Privacy/09 - Securite agentique et prompt injection]]
+
+### Meta-prompting
+- [[15-Meta-Prompting/08 - Tester un prompt]]
+
+### Références
+- [[16-Checklists-References/08 - Glossaire technique]]

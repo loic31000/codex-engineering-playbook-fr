@@ -1,14 +1,26 @@
 ---
 titre: "Définir la structure du repository"
-type: prompt
+format: prompt
+archetype: workflow
+domaine: architecture
 tags:
   - architecture
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "analyse ou décision architecturale structurée"
+niveau_risque: moyen
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Définir la structure du repository
@@ -35,6 +47,10 @@ Favorise :
 - conventions simples.
 
 Évite les arborescences profondes sans valeur.
+
+Sortie : analyse ou décision architecturale structurée.
+
+Si une information manquante change matériellement le résultat, marque-la « à clarifier » au lieu de l'inventer.
 ```
 
 ## Sortie attendue

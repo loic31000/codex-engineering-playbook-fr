@@ -1,16 +1,28 @@
 ---
 titre: "Définir la direction visuelle"
-type: prompt
+format: prompt
+archetype: instruction
+domaine: frontend-design-ux
 tags:
   - frontend
   - design
   - ux
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "recommandation frontend/design directement exploitable"
+niveau_risque: faible
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Définir la direction visuelle
@@ -22,29 +34,32 @@ Quand tu veux un langage visuel cohérent avant de coder les écrans.
 ## Prompt prêt à copier
 
 ```text
-Agis comme un directeur artistique produit numérique.
+Définis une direction visuelle adaptée au produit fourni.
 
-À partir du produit, des utilisateurs et du positionnement, propose une direction visuelle.
+Utilise en priorité :
+- audience et contexte d'utilisation ;
+- fréquence d'utilisation ;
+- positionnement de la marque ;
+- design existant ;
+- références visuelles fournies.
 
-Définis :
-- personnalité ;
-- niveau de densité ;
-- hiérarchie ;
-- rythme ;
-- tonalité ;
+Produis :
+- intention de design en 2–3 phrases ;
+- 4 à 6 adjectifs directeurs ;
+- hiérarchie et densité ;
 - typographie ;
-- principes couleur ;
-- surfaces ;
-- bordures ;
-- rayons ;
-- ombres ;
-- iconographie ;
-- illustration/photo si pertinent ;
+- palette et rôle des couleurs ;
+- principes de layout ;
+- composants et surfaces ;
+- iconographie / imagerie ;
 - motion ;
-- exemples de ce qu'il faut éviter.
+- éléments à éviter.
 
-Ne choisis pas des effets uniquement décoratifs.
-Chaque choix doit soutenir lisibilité, confiance et usage.
+Adapte le style au domaine : un outil opérationnel fréquent doit privilégier efficacité, scan et répétition ; une expérience éditoriale ou ludique peut être plus expressive.
+
+Si des références visuelles sont fournies, extrais leurs principes utiles sans les copier littéralement.
+
+Signale les décisions visuelles qui nécessitent une validation humaine.
 ```
 
 ## Sortie attendue

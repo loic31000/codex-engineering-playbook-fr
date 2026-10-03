@@ -16,56 +16,56 @@ deprecated
 
 Idée suffisamment structurée pour être essayée.
 
-Métadonnées :
-
 ```yaml
 statut: draft
-version: "0.1.0"
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+derniere_validation: null
 ```
 
 ## testing
 
-Le prompt est utilisé sur de vrais projets.
+Le prompt est utilisé sur de vrais projets. Documenter au minimum :
 
-```yaml
-statut: testing
-test_reel: true
-```
+- cas nominal ;
+- contexte incomplet ;
+- edge case ;
+- cas adversarial ou contenu non fiable ;
+- second projet ou stack différente si pertinent.
 
-Pendant cette phase, note les problèmes :
-
-- ambiguïté ;
-- sortie trop longue ;
-- oubli fréquent ;
-- scope creep ;
-- mauvaise compréhension ;
-- contraintes ignorées ;
-- comportement trop spécifique à une stack.
+Pendant cette phase, noter ambiguïté, scope creep, contraintes ignorées, format instable, verbosité inutile et dépendance excessive à une stack.
 
 ## stable
 
-Un prompt peut devenir stable lorsqu’il est suffisamment éprouvé.
-
-Recommandation :
+Un prompt peut devenir stable lorsqu'il est suffisamment éprouvé :
 
 - minimum 3 utilisations réelles ;
-- résultats utiles dans plusieurs contextes ;
-- aucune faiblesse critique connue ;
-- sortie attendue reproductible ;
+- si possible au moins 2 contextes ou projets ;
+- aucun échec critique connu ;
+- sortie suffisamment reproductible ;
+- cas incomplet et cas limite testés ;
 - limitations comprises.
 
 ```yaml
 statut: stable
 version: "1.0.0"
-test_reel: true
+tests_reels: 3
+derniere_validation: YYYY-MM-DD
 ```
+
+## Revalidation
+
+`stable` n'est pas permanent. Repasser un prompt en `testing` après :
+
+- changement majeur de modèle ;
+- changement de standard ou norme ;
+- régression observée ;
+- modification importante du prompt ;
+- nouveau type de contexte qui révèle une faiblesse.
 
 ## deprecated
 
-Le prompt existe encore pour historique mais un autre workflow doit être préféré.
-
-Ajouter :
+Conserver la fiche pour historique et indiquer le remplacement :
 
 ```markdown
 > Déprécié : utiliser [[Chemin/Nouveau prompt]].
@@ -73,6 +73,4 @@ Ajouter :
 
 ## Principe
 
-La maturité n’est pas liée à la longueur ou à la sophistication du prompt.
-
-Un prompt court et fiable vaut mieux qu’un prompt complexe jamais réellement testé.
+La maturité n'est pas liée à la longueur. Un prompt court et fiable vaut mieux qu'un prompt complexe jamais réellement testé.

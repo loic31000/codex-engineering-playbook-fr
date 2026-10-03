@@ -171,3 +171,19 @@ meta: améliore le template de prompt
 ```
 
 Aucune convention de commit n’est obligatoire si tu travailles seul ; la lisibilité est prioritaire.
+
+
+## Contrat V0.2 pour un nouveau prompt
+
+Un nouveau prompt doit :
+
+- utiliser `format: prompt` et un `archetype` parmi `instruction`, `workflow`, `checklist`, `template` ;
+- déclarer ses entrées utiles et sa sortie attendue ;
+- mettre le contrat de sortie dans le bloc copiable ;
+- définir une condition d'arrêt uniquement lorsqu'une ambiguïté peut changer matériellement le résultat ;
+- éviter le contexte massif et le sur-guidage ;
+- distinguer faits, hypothèses et informations à clarifier ;
+- ne jamais demander de secret réel ;
+- signaler toute action externe, destructive, irréversible ou sensible avant exécution.
+
+Avant passage à `stable`, documenter au moins trois utilisations réelles et, si possible, les cinq familles de cas du journal de tests.

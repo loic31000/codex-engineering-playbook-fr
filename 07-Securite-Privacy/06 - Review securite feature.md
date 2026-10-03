@@ -1,14 +1,26 @@
 ---
 titre: "Security review d'une feature"
-type: prompt
+format: prompt
+archetype: checklist
+domaine: securite-privacy
 tags:
   - security
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "analyse sécurité ciblée avec vérifications"
+niveau_risque: eleve
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Security review d'une feature
@@ -20,35 +32,26 @@ Avant implémentation ou merge.
 ## Prompt prêt à copier
 
 ```text
-Fais une security review ciblée de cette feature.
+Effectue une review sécurité ciblée de la feature et du diff fournis.
 
-Ne fais pas une checklist générique.
+Analyse seulement les surfaces réellement touchées.
+Selon leur pertinence, vérifie :
+authentification, autorisation, validation, injections, SSRF, données sensibles, isolation tenant, uploads, webhooks, secrets, dépendances, logs, rate limiting et fonctions admin.
 
-Analyse uniquement les surfaces réellement touchées :
-- auth ;
-- authorization ;
-- validation ;
-- injection ;
-- data ;
-- privacy ;
-- uploads ;
-- webhooks ;
-- SSRF ;
-- secrets ;
-- dépendances ;
-- logs ;
-- rate limiting ;
-- tenant isolation ;
-- admin.
-
-Pour chaque finding :
+Pour chaque constat :
 - sévérité ;
-- scénario ;
+- statut : confirmé / probable / à vérifier ;
+- preuve ;
+- préconditions d'exploitation ;
+- scénario d'abus ;
 - impact ;
-- mitigation ;
-- test/vérification.
+- mitigation minimale ;
+- test de sécurité ou méthode de vérification.
 
-Les problèmes critiques non résolus sont blockers.
+Ne demande et n'affiche aucun secret réel.
+Ne crée pas de vulnérabilité théorique sans chemin d'exploitation plausible.
+
+Si une correction implique une action externe, destructive ou sensible, signale-la avant exécution et demande validation.
 ```
 
 ## Sortie attendue

@@ -1,14 +1,26 @@
 ---
 titre: "Privacy et données personnelles"
-type: prompt
+format: prompt
+archetype: instruction
+domaine: securite-privacy
 tags:
   - security
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "analyse sécurité ciblée avec vérifications"
+niveau_risque: eleve
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Privacy et données personnelles
@@ -20,24 +32,38 @@ Quand le système traite des données personnelles.
 ## Prompt prêt à copier
 
 ```text
-Analyse le traitement de données personnelles.
+Analyse la feature fournie sous l'angle protection des données.
 
 Cartographie :
-- données collectées ;
-- finalité ;
+- catégories de données ;
 - source ;
+- finalité déclarée ;
 - stockage ;
-- accès ;
-- partage ;
-- logs ;
-- rétention ;
+- personnes/services ayant accès ;
+- transferts ou partages ;
+- logs et télémétrie ;
+- durée de conservation ;
 - suppression ;
 - export ;
-- sauvegarde ;
+- sauvegardes ;
 - environnements de test.
 
-Cherche la minimisation des données et les fuites accidentelles.
-Signale les décisions réglementaires qui nécessitent validation juridique plutôt que de les inventer.
+Recherche en priorité :
+collecte excessive, données non nécessaires, fuite dans les logs, droits trop larges, rétention indéfinie et copies secondaires oubliées.
+
+Pour chaque problème :
+- donnée concernée ;
+- risque ;
+- minimisation ou contrôle technique proposé ;
+- moyen de vérification.
+
+Sépare :
+- fait confirmé ;
+- hypothèse ;
+- information manquante ;
+- décision juridique à faire valider.
+
+N'invente jamais une base légale ou une conclusion de conformité.
 ```
 
 ## Sortie attendue

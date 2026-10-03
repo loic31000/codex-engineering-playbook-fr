@@ -1,15 +1,27 @@
 ---
 titre: "Bootstrap projet"
-type: prompt
+format: prompt
+archetype: workflow
+domaine: decouverte
 tags:
   - discovery
   - bootstrap
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "carte complète mais concise du projet, avec incertitudes explicites"
+niveau_risque: faible
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Bootstrap projet
@@ -59,7 +71,7 @@ Si tu recommandes quelque chose, marque-le comme proposition tant que je ne l'ai
 3. décisions encore indécises ;
 4. risques ;
 5. documents à créer ;
-6. blockers avant spécification.
+6. bloquants avant spécification.
 ```
 
 ## Sortie attendue

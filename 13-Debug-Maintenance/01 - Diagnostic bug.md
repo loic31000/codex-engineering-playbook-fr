@@ -1,15 +1,27 @@
 ---
 titre: "Diagnostiquer un bug"
-type: prompt
+format: prompt
+archetype: workflow
+domaine: debug-maintenance
 tags:
   - debug
   - maintenance
 statut: draft
-version: "0.1.0"
-langue: fr
+version: "0.2.0"
+langue: fr-FR
 outils:
   - codex
-test_reel: false
+tests_reels: 0
+cas_reussis: 0
+modeles_testes: []
+derniere_validation: null
+derniere_revision: 2026-10-03
+entrees_requises:
+  - contexte-fourni
+sortie_attendue: "diagnostic ou plan de maintenance fondé sur des preuves"
+niveau_risque: eleve
+actions_externes: false
+donnees_sensibles: ne_pas_fournir
 ---
 
 # Diagnostiquer un bug
@@ -35,6 +47,8 @@ Procédure :
 9. seulement ensuite propose le correctif minimal.
 
 Ne change pas plusieurs choses à la fois.
+
+Sortie : diagnostic ou plan de maintenance fondé sur des preuves.
 ```
 
 ## Sortie attendue

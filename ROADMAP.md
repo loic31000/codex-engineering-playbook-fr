@@ -105,3 +105,27 @@ La roadmap n’est pas un engagement de dates. Elle sert à choisir les prochain
 Ajoute ici les idées avant de créer une Issue :
 
 - [ ] ...
+
+
+## V0.2 — recommandations de l'audit 2026
+
+Réalisé structurellement :
+
+- [x] contrat de sortie dans les prompts copiables ;
+- [x] séparation `format` / `archetype` ;
+- [x] métadonnées de validation et risque ;
+- [x] sécurité agentique / prompt injection ;
+- [x] frontend : screenshot/référence, i18n/RTL, boucle de correction visuelle ;
+- [x] clarification WCAG conformité vs bonnes pratiques ;
+- [x] glossaire technique ;
+- [x] protocole de tests et revalidation.
+
+À valider par l'usage :
+
+- [ ] tester en priorité Implémentation ;
+- [ ] puis Review / convergence ;
+- [ ] puis Sécurité / Privacy ;
+- [ ] puis Frontend / Design / UX ;
+- [ ] puis Specs / Stories ;
+- [ ] constituer un premier noyau de 20–30 prompts `stable` ;
+- [ ] ne pas promouvoir artificiellement les autres prompts sans résultats réels.

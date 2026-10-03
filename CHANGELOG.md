@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.2.0 — 2026-10-03
+
+Révision structurelle issue de l'audit approfondi du playbook.
+
+### Modifié
+
+- contrat de sortie intégré aux blocs copiables ;
+- métadonnées enrichies : format, archetype, domaine, entrées, risque, validation ;
+- prompts prioritaires réécrits : Story, modules, direction visuelle, WCAG, sécurité feature, privacy, implémentation Story, code review ;
+- terminologie normalisée : constat, bloquant, vérifications ;
+- cycle de vie renforcé avec revalidation des prompts stables ;
+- journal de tests enrichi avec cinq cas et score /12 ;
+- documentation de contribution et sécurité mise à jour.
+
+### Ajouté
+
+- sécurité agentique et prompt injection ;
+- test d'un prompt ;
+- review par référence visuelle / screenshot ;
+- internationalisation, RTL et textes longs ;
+- boucle screenshot → comparaison → correction ;
+- glossaire technique.
+
+### Validation
+
+Aucun prompt n'est promu automatiquement à `stable`. Les compteurs de tests réels restent à zéro tant qu'aucun usage n'est documenté.
+
+---
+
 Ce changelog suit l’évolution de la bibliothèque elle-même.
 
 ## Unreleased

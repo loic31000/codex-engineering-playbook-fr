@@ -178,7 +178,7 @@ Voir [[ROADMAP]].
 
 ## Licence
 
-MIT — voir [[LICENSE]].
+MIT — voir [LICENSE](LICENSE.md).
 
 
 ## Évolution V0.2 — audit octobre 2026
